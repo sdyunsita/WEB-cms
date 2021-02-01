@@ -7,6 +7,7 @@ a {
 .clear {
     clear: both;
 }
+<<<<<<< HEAD
 .row{
         display: -ms-flexbox;
         display: flex;
@@ -15,6 +16,9 @@ a {
          margin-right: 0px; 
         margin-left: 0px;
 }
+=======
+
+>>>>>>> 813af12cc242eb7ced7a78f33f88b4080f4a74e3
 .float-left {
     float: left;
 }
@@ -119,12 +123,21 @@ nav  .dropdown:hover .dropdown-menu{
 .ltop {
     height: 50px;
     border-bottom: 5px solid #b02427;
+<<<<<<< HEAD
 }
 
 .llogo {
     margin-right: 10px;
 }
 
+=======
+}
+
+.llogo {
+    margin-right: 10px;
+}
+
+>>>>>>> 813af12cc242eb7ced7a78f33f88b4080f4a74e3
 .llogo img {
     width: 50px;
     height: 50px;
