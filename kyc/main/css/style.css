@@ -1,5 +1,6 @@
 *{
-    font-family: SimSun;
+    font-family:"simsun";
+    font-family:'Hiragino Sans GB',SimSun,Tahoma,Arial,Helvetica,STHeiti;
 }
 a {
     color: black;
@@ -37,7 +38,6 @@ a {
 }
 
 .header .topline {
-    height: 25px;
     background-color: #b02427;
     padding: 0 25px;
 }
@@ -48,9 +48,7 @@ a {
     line-height: 25px;
 }
 
-.header .topline .float-left:first-child span {
-    margin-right: 30px;
-}
+
 .bg{
     background-color: #b02427;
     background-image: url(../img/back.png);
