@@ -275,3 +275,79 @@ nav  .dropdown:hover .dropdown-menu{
     padding: 20px 0px;
 
 }
+
+/* 列表页*/
+.table{
+    width: 1050px;
+    margin: 0 auto;
+}
+.table a{
+font-family:"KaiTi";
+}
+.table hr{
+color:#0178a3;
+height:2px;
+border-top:0;}
+h1{
+display: block;
+    font-size: 36px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bolder;
+    font-family:"SimSun";
+letter-spacing:10px;
+color:#0178a3;
+}
+
+.menutitle{
+    text-align: center;
+        margin-top: 20px;
+}
+.tablelist .listtitle{
+    /* width: 1260px;  */
+    height: 80px;
+    background-color: #0178a3;
+    font-size: 28px;
+    line-height: 80px;
+    color: white;
+    padding-left: 20px;
+font-family:"FangSong";
+}
+/* .tablelist .listcon{
+    width: 1260px;
+} */
+.tablelist .listcon ul{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.tablelist .listcon ul li{
+    /* width: 1260px; */
+    height: 60px;    
+    list-style-type: none;
+line-height:60px;
+padding-left:20px;
+
+}
+.tablelist .listcon ul li:nth-child(2n) {
+    background-color: #d7d7d7;
+}
+.tablelist .listcon ul li a{
+    text-decoration: none;
+    height: 40px;    
+    font-size: 22px;
+    line-height: 40px;
+    color:#0178a3;
+transition: all 0.5s ease-in-out 0s;
+}
+.tablelist .listcon ul li a:hover{
+padding-left: 20px;
+    color: #0b94ff;
+    font-weight: bold;
+}
+.tablelist .listcon ul li a:hover::before{
+content:"·"
+}
+    
