@@ -277,8 +277,12 @@ nav  .dropdown:hover .dropdown-menu{
 }
 
 /* 列表页*/
+
+.block20{
+    height: 20px;
+}
 .table{
-    width: 1050px;
+    width: 99%;
     margin: 0 auto;
 }
 .table a{
@@ -288,18 +292,7 @@ font-family:"KaiTi";
 color:#0178a3;
 height:2px;
 border-top:0;}
-h1{
-display: block;
-    font-size: 36px;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bolder;
-    font-family:"SimSun";
-letter-spacing:10px;
-color:#0178a3;
-}
+
 
 .menutitle{
     text-align: center;
@@ -325,29 +318,78 @@ font-family:"FangSong";
 }
 .tablelist .listcon ul li{
     /* width: 1260px; */
-    height: 60px;    
+    height: 60px;
     list-style-type: none;
-line-height:60px;
-padding-left:20px;
+    line-height: 60px;
+    padding-left: 20px;
 
 }
-.tablelist .listcon ul li:nth-child(2n) {
-    background-color: #d7d7d7;
+.tablelist .listcon ul li:nth-child(2n+1) {
+    background-color: #b0242738;
 }
 .tablelist .listcon ul li a{
     text-decoration: none;
-    height: 40px;    
+    height: 60px;    
     font-size: 22px;
-    line-height: 40px;
-    color:#0178a3;
+    line-height: 60px;
+    color:black;
 transition: all 0.5s ease-in-out 0s;
 }
 .tablelist .listcon ul li a:hover{
 padding-left: 20px;
-    color: #0b94ff;
+    color:#d11f22;
     font-weight: bold;
 }
 .tablelist .listcon ul li a:hover::before{
 content:"·"
 }
+
+.lefttable{
+    border: black  1px solid;
+    padding-left: 20px;
+}
+.lefttable h1{
+    display: block;
+    font-size: 36px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bolder;
+    letter-spacing:10px;
+    color:#b02427;
+    font-weight: 700;
+    }
+
+.lefttable ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+.lefttable ul li{
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-bottom: 1px solid white;
+    background-color: #b02427;
+    font-weight: 600;
+}
+.lefttable ul li:hover{
+    background-color:  #ffffff;
+    border: 1px solid #b02427;
+    transition:all 0.4s cubic-bezier(0.1, 0.01, 0.68, 0.93) 0s;
     
+}
+.lefttable ul li:hover a{
+    color: #b02427;
+}
+.lefttable ul li a {
+    color: white;
+}
+
+/*介绍页simple*/
+
+.table{
+    
+}
