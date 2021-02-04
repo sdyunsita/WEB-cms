@@ -288,11 +288,6 @@ nav  .dropdown:hover .dropdown-menu{
 .table a{
 font-family:"KaiTi";
 }
-.table hr{
-color:#0178a3;
-height:2px;
-border-top:0;}
-
 
 .menutitle{
     text-align: center;
@@ -390,6 +385,16 @@ content:"·"
 
 /*介绍页simple*/
 
-.table{
+.table .maincontent{
     
+}
+.maincontent .conttitle{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.maincontent .time{
+    text-align: center;
+    font-size: 18px;
 }
