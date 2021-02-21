@@ -1,0 +1,91 @@
+<form action='${actionURL}' method='post' name='${formName}'  class="form-inline my-2 my-lg-0" onsubmit="return subsearchdata${formName}()">
+ ${hidden}
+ <table border='0' cellspacing="1" cellpadding="0">
+  <tr>
+      <td>
+        <span id="intextspan${formName}"></span>
+        <iframe id="intextframe${formName}"   src="about:blank"   scrolling="no" frameborder="0" style="position:absolute;top:0px;left:0px;display:none;"></iframe>
+        <input size='12' name='${inTextName}' style="height:30px;width:120px;margin-left: -22px;border: 0px;" >
+        <td align="absmiddle" nowrap="nowrap" height="1">
+        <#if (searchimg ="")>
+        <input type='submit' name="FindButton" value='${startsearch}' ${searchbuttonstyle} class="btn" />
+        <#else>
+        <input type="image"  src='${searchimg}'  align="absmiddle" valign="bottom"  >
+        </#if>
+   </td>
+   </td>
+
+  </tr>
+ </table>
+</form>
+<script>
+String.prototype.trim　= function()       
+{              
+    var t = this.replace(/(^\s*)|(\s*$)/g, "");     
+    return t.replace(/(^　*)|(　*$)/g, "");     
+}
+function subsearchdata${formName}()
+{ 
+    if(document.${formName}.INTEXT.value.trim()=="")
+    {
+         alert("${key}");
+         return false;
+    }
+    if(checkData${formName}(document.${formName}))
+    {
+       return true;  
+    }
+    return false;
+}       
+</script>
+
+<#if isSearchFreqFast>
+    <script language='JavaScript' src='${v_link("/system/dwr/engine.js")}'></script>
+    <script language='JavaScript' src='${v_link("/system/dwr/util.js")}'></script>
+    <script language='JavaScript' src='${v_link("/system/dwr/interface/NewsSearchDWR.js")}'></script>
+    <script language='JavaScript' src='${v_link("/system/resource/js/vsb_news_search.js")}'></script>
+    <script language='JavaScript' src='${v_link("/system/resource/js/vsb_news_search_entry.js")}'></script>    
+    <script language='JavaScript' src='${v_link("/system/resource/js/language.js")}'></script>
+    <script language='JavaScript' src='${v_link("/system/resource/js/base64.js")}'></script>
+    <script language='JavaScript' src='${v_link("/system/resource/js/formfunc.js")}'></script>    
+    <script>    
+    news_search${formName} = new vsb_news_search();
+    news_search${formName}.isShowCode=false;
+    news_search${formName}.tooltipid = 'tooltip${formName}';
+    news_search${formName}.apptag = 'intextspan${formName}';
+    news_search${formName}.frametag = 'intextframe${formName}';
+    news_search_entry${formName} = new vsb_news_search_entry();
+    news_search_entry${formName}.formname = "${formName}";
+    news_search_entry${formName}.news_search_obj = news_search${formName}; 
+    news_search_entry${formName}.querytxtsize = 155
+    news_search_entry${formName}.yzmts ="${yzmts}";
+    news_search_entry${formName}.qdstyle ="";
+    news_search_entry${formName}.qdname = "${Yes}";
+    news_search_entry${formName}.qxstyle = "";
+    news_search_entry${formName}.qxname = "${Abolish}";
+    news_search_entry${formName}.showstr='${yzmtsk}';    
+    function checkData${formName}(formname)
+    {    
+        return news_search_entry${formName}.checkdata(formname)   
+    }
+    </script>
+<#else>
+    <script> 
+    function checkData${formName}(formname)
+    {
+        if(${formName}.INTEXT.value.trim()=="")
+        {
+            alert("${key}");
+            return false;
+        }       
+        var  base64 = new Base64();
+        if(window.toFF==1)
+            {
+                var ssvalue = ${formName}.INTEXT.value;
+                document.${formName}.INTEXT2.value = base64.encode(Simplized(ssvalue));
+            }else
+            document.${formName}.INTEXT2.value = base64.encode(document.${formName}.INTEXT.value);
+           return true;
+    }
+    </script>
+</#if>

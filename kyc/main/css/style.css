@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'song';
+    src: url('./SimSun.woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 *{
-    font-family:"simsun";
-    font-family:'Hiragino Sans GB',SimSun,Tahoma,Arial,Helvetica,STHeiti;
+    font-family:"song";
 }
 a {
     color: black;
@@ -69,12 +75,18 @@ nav .dropdown-toggle::after {
     display: inline-block;
     margin-left: 0em;
     vertical-align: 0em;
-    content: "";
+    content: none;
     border-top: 0em solid;
     border-right: 0em solid transparent;
     border-bottom: 0;
     border-left: 0em solid transparent;
 }
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .2rem;
+    padding-left: .2rem;
+}
+
 nav .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -168,7 +180,7 @@ nav  .dropdown:hover .dropdown-menu{
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-left: 40px;
+    padding-left: 0px;
     margin-bottom: 0;
     list-style: none;
     justify-content: center;
@@ -398,3 +410,4 @@ content:"·"
     text-align: center;
     font-size: 18px;
 }
+

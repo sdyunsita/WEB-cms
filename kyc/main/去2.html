@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    function _nl_ys_check(){
+        
+        var keyword = document.getElementById('${showkeycodeid}').value;
+        if(keyword==null||keyword==""){
+            alert("请输入你要检索的内容！");
+            return false;
+        }
+        if(window.toFF==1)
+        {
+            document.getElementById("${lucenenewssearchkeyword}").value = Simplized(keyword );
+        }else
+        {
+            document.getElementById("${lucenenewssearchkeyword}").value = keyword;            
+        }
+        var  base64 = new Base64();
+        document.getElementById("${lucenenewssearchkeyword}").value = base64.encode(document.getElementById("${lucenenewssearchkeyword}").value);
+        new VsbFormFunc().disableAutoEnable(document.getElementById("${showkeycodeid}"));
+        return true;
+    } 
+</script>
+<form action="${actionURL}" method="post" id="${formName}" name="${formName}" onsubmit="return _nl_ys_check()" style="display: inline" class="form-inline my-2 my-lg-0">
+ ${hidden}
+<input name='${showkeycode}' id="${showkeycodeid}"  class="form-control mr-sm-2" type="search" placeholder="Search">
+<input class="btn btn-cus my-2 my-sm-0" type="submit"  align="absmiddle">
+</form>
