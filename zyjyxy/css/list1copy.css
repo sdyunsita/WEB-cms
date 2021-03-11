@@ -129,4 +129,44 @@ p{
     font-weight: normal;
 }
 
+.content1{
+    min-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+}
+.content1 .list{
+    margin-top: 50px;
+    font-size: 25px;
+    
+}
+.content1 .list ul{
+    list-style: none;
+}
+.content1 a{
+    color: black;
+}
+.content1 a:hover{
+    color: black;
+}
+.content1 a:visited{
+    color: black;
+}
 
+.content1 .list li{
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+.content1 .list li:nth-child(2n+1){
+    background-color: grey;
+}
+
+.content1 .list li .id:after {
+    content: ".";
+}
+
+.content1 .list li a{
+    transition: all 0.5s ease-in-out 0s;
+}
+.content1 .list li a:hover{
+    padding-left: 20px;
+}
