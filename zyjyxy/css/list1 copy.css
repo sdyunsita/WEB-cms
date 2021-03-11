@@ -14,6 +14,9 @@ a{
 a:hover{
     color: white;
 }
+a:visited{
+    color: white;
+}
 .container{
     display: flex;
     padding: 0;
@@ -101,10 +104,11 @@ a:hover{
 .name p{
     text-transform: uppercase;
     font-size: 2.728rem;
-    line-height: 1;
+    line-height: 2;
     margin: 0;
     padding: 3px ;
     text-align: center;
+    margin: 0 -45px;
 }
 .mine-item:hover .bg{
     filter: grayscale(0);
