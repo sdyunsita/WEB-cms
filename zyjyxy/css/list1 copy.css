@@ -30,7 +30,7 @@ a:hover{
     transform: translate3d(0,0,0);
     position: relative;
     width: 25%;
-    height: 100vh;
+    height: calc(100vh - 70px);
     min-height: 600px;
     color: white;
     overflow: hidden;
@@ -124,16 +124,5 @@ a:hover{
 p{
     font-weight: normal;
 }
-.title{
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
-}
-.title h1{
-    font-size: 55px;
-    font-weight: 900;
-}
+
 
