@@ -94,7 +94,7 @@ a:visited{
 }
 .name{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%) translateY(-100%);/*相对于自身移动。就相当于把原来左上角的重心移到了正中间*/
     z-index: 2;
@@ -131,8 +131,8 @@ p{
     font-weight: normal;
 }
 .title h1{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 .content1{
     min-width: 1200px;
