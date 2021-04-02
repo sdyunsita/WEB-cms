@@ -184,7 +184,8 @@ nav {
     color: black;
 }
 .news a .date{
-    float:right
+    float:right;
+    color: gray;
 }
 .news p {
     margin-bottom: 5px;
