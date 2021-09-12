@@ -9,14 +9,12 @@
     text-decoration: none;
 }
 
-a:hover {
-    color: white;
-}
 
 .top {
     min-width: 1440px;
     height: 160px;
-    background-color: #264F82;
+    //background-color: #264F82;
+    background-image: linear-gradient(#437fe5, #6eadf2);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,7 +48,7 @@ a:hover {
     position: relative;
     bottom: 10px;
     display: flex;
-    width: 30%;
+    width: 32%;
     /* align-items: center; */
     padding-right: 13%;
     font-size: 18px;
@@ -64,11 +62,11 @@ a:hover {
 nav {
     min-width: 1440px;
     width: 100%;
-    background-color: rgb(2, 68, 128);
+    background-color: rgb(17, 85, 146);
 }
 
 .nav {
-    width: 900px;
+    width: 1200px;
     margin: 0 auto;
     height: 54px;
 }
@@ -167,50 +165,6 @@ nav {
     font-size: 1.25rem;
 }
 
-.news {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.news ul{
-    list-style: none;
-    font-size: 18px;
-    width: 100%;
-    padding: 0 10px;
-}
-.news ul li a{
-    color: black;
-}
-.news a .date{
-    float:right;
-    color: gray;
-}
-.news p {
-    margin-bottom: 5px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.news p:hover {
-    text-decoration: underline;
-}
-
-
-.news .title {
-    width: 80%;
-    white-space: nowrap;
-    /*一行显示*/
-    overflow: hidden;
-    /*超出部分隐藏*/
-    text-overflow: ellipsis;
-    /*用...代替超出部分*/
-}
-
-.news .time {
-    color: dimgray;
-}
 
 .mybox-2 {
     float: left;
@@ -305,7 +259,7 @@ nav {
     float: left;
     width: 100%;
     height: 50px;
-    background-color: #00437F;
+    background-color:rgb(17, 85, 146);
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -333,10 +287,183 @@ nav {
     float: left;
     width: 100%;
     height: 100px;
-    background-color: #255085;
+    background-color: #4775ad;
     text-align: center;
 }
 .end .bq{
     margin-top: 10px;
     color: white;
+}
+
+
+
+.menu {
+    width: 100%;
+    height: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    background-color: #356CA5;
+    list-style: none;
+    display: inline;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+        float: left;
+    /* background-color: antiquewhite; */
+    width: 164px;
+    height: 100%;
+    list-style: none;
+    /* display: flex; */
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.menu li .img {
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu li .txt {
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    position: relative;
+    bottom: 3px;
+}
+.link{
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    color: rgb(153, 153, 153);
+    /*border: 1px solid rgb(153, 153, 153);*/
+    /* margin: 50px 20px 0px 20px; */
+    /* background-color: aquamarine; */
+}
+.link a{
+    color: rgb(153, 153, 153);
+}
+.link span{
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+}
+
+
+.newsblock ul{
+    list-style-type: none;
+    
+}
+
+.newsblock ul li{
+    width: 95%;
+    border: solid 1px gainsboro;
+    margin:12px 15px;
+    height: 50px;
+}
+.newsblock ul li a{
+    width: 100%;
+    display: flex;
+}
+
+.newsblock ul li .date{
+    background-color:rgb(17, 85, 146);
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    transition: 1s;
+}
+.newsblock ul li .date span{
+    font-size: 20px;
+}
+.newsblock ul li .alink{
+    padding-left: 10px;
+    line-height: 50px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #000;
+    transition: 1s;
+}
+.newsblock ul li .alink::after{
+    content: ">";
+    color: #afafaf;
+    width: 30px;
+    float: right;
+    font-size: 38px;
+    line-height: 50px;
+    height: 50px;
+    font-weight: 100;
+}
+.newsblock ul li:hover a{
+    text-decoration: none;
+
+}
+.newsblock ul li:hover .date{
+    background-color: rgb(64, 138, 202);
+    font-size: 20px;
+}
+.newsblock ul li:hover .alink{
+    color: rgb(17, 85, 146);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.news ul {
+    width: 90%;
+    margin: 0 auto;
+}
+.news ul li{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    list-style-type: none;
+    width: 100%;
+    clear: both;
+}
+.news ul li a{
+    width: 100%;
+}
+.news ul li a .alink{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+}
+.news ul li a .alink::before{
+    content: "●";
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+.news ul li a .adate{
+    float: right;
+    color: black;
+    font-size: 18px;
+}
+.news ul li a .adate::after{
+    content: '.';
+    display: none;
+    clear: both;
+}
+.news ul li a:hover .alink{
+    color: rgb(17, 85, 146);
+    text-decoration: none;
+    font-size: 18px;
+}
+.news ul li a:hover .adate{
+    color: rgb(17, 85, 146);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 1s;
 }
